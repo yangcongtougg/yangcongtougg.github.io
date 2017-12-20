@@ -11,10 +11,6 @@
   <title>{% block title %}{% endblock %}</title>
   {% include '_third-party/analytics/index.swig' %}
 </head>
-{% if theme.canvas_nest %}
-<script type="text/javascript"
-color="0,0,255" opacity='0.7' zIndex="-2" count="30" src="//cdn.bootcss.com/canvas-nest.js/1.0.0/canvas-nest.min.js"></script>
-{% endif %}
 <body itemscope itemtype="http://schema.org/WebPage" lang="{{ page.lang || page.language || config.language }}">
 
   {% set container_class = "container " %}
@@ -91,5 +87,6 @@ color="0,0,255" opacity='0.7' zIndex="-2" count="30" src="//cdn.bootcss.com/canv
   {% include '_third-party/mathjax.swig' %}
   {% include '_third-party/scroll-cookie.swig' %}
   {% include '_third-party/exturl.swig' %}
+<script type="text/javascript" color="0,0,255" opacity='0.7' zIndex="-2" count="20" src="//cdn.bootcss.com/canvas-nest.js/1.0.1/canvas-nest.min.js"></script>
 </body>
 </html>
