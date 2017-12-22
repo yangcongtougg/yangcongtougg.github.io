@@ -38,6 +38,8 @@ categories: Hexo
 ---
 - 安装[Hexo](https://hexo.io/zh-cn/index.html) 
 ![](https://t1.aixinxi.net/o_1c1uhgdt91ts7apf1nnk1foed37a.png-w.jpg)
+
+
 打开终端执行
 ```
 npm install hexo-cli -g
@@ -105,7 +107,7 @@ clone完毕之后如下图
 Markdown编辑所用。
 
 ---
-- 注册[DaoVoice](https://account.daocloud.io/signin)
+- 注册[DaoVoice](https://account.daocloud.io/signin)站内及时消息
 ![](https://t1.aixinxi.net/o_1c1unbgru16ek1aetu9g1noe2lba.png-w.jpg)
 最好使用github账号登录。
 
