@@ -78,7 +78,7 @@ theme: hexo-theme-next
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repo: https://git.coding.net/yangcongtougg/yangcongtougg.coding.me.git
+  repo: https://yangcongtougg.github.io
   branch: master
 # Extensions
 ## Plugins: http://hexo.io/plugins/
