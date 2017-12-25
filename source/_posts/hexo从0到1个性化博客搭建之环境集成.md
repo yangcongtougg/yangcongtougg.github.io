@@ -81,7 +81,7 @@ git clone git@github.com:iissnan/hexo-theme-next.git
 git clone https://github.com/iissnan/hexo-theme-next.git
 ```
 第一种方式需要在本地git及github上配置SSH KEY，在此不再赘述。
-![](https//t1.aixinxi.net/o_1c1uil0ghjts1d7ovd177p78a.png-w.jpg)
+![](https://t1.aixinxi.net/o_1c1uil0ghjts1d7ovd177p78a.png-w.jpg)
 clone完毕之后如下图
 
 
