@@ -1,5 +1,5 @@
 ---
-title: Hexo从0到1个性化博客搭建准备工作
+title: Hexo从0到1个性化博客搭之环境集成
 date: 2017-12-22 11:13:46
 tags: Hexo
 categories: Hexo
@@ -24,20 +24,20 @@ categories: Hexo
 
 ### 环境搭建
 - 安装[Node.js](https://nodejs.org/zh-cn/)
-![](http://t1.aixinxi.net/o_1c1ugl7i54uvf0fkvra2l11jba.png-w.jpg)
+![](https://t1.aixinxi.net/o_1c1ugl7i54uvf0fkvra2l11jba.png-w.jpg)
 点击下载安装即可(根据自己不同的操作系统选择)。
 ---
 - 安装[Git](https://git-scm.com/)
-![](http://t1.aixinxi.net/o_1c1uh6db42ou10gs1cpnbnm1fg7a.png-w.jpg)
+![](https://t1.aixinxi.net/o_1c1uh6db42ou10gs1cpnbnm1fg7a.png-w.jpg)
 选择合适的操作系统。
 ---
 - 配置GithubPage
 登陆自己的Github账户，创建仓库。
-![](http://t1.aixinxi.net/o_1c1uk568c1huh10b81op4183n1m3ea.png-w.jpg)
+![](https://t1.aixinxi.net/o_1c1uk568c1huh10b81op4183n1m3ea.png-w.jpg)
 其中红线部分换成你自己的Github名，此格式为固定格式不容许更改。在自己的桌面将项目clone下来，此时应该一个文件也没有(如果创建了README.md文件，hexo在执行hexo g 的时候会将此文件也生成为静态的html文件)。此时在本地创建两个分支master为默认的主分支，(部署我们的生成的静态文件使用)，创建一个分支列如hexo用来存放我们的hexo的项目。创建好分支之后与远程仓库进行关联push上去。
 ---
 - 安装[Hexo](https://hexo.io/zh-cn/index.html) 
-![](http://t1.aixinxi.net/o_1c1uhgdt91ts7apf1nnk1foed37a.png-w.jpg)
+![](https://t1.aixinxi.net/o_1c1uhgdt91ts7apf1nnk1foed37a.png-w.jpg)
 
 
 打开终端执行
@@ -54,7 +54,7 @@ npm install
 hexo server
 ```
 然后你会看到类似这样的文件内容
-![](http://t1.aixinxi.net/o_1c1uhrp9i1dmev3g5e7crdioua.png-w.jpg)
+![](https://t1.aixinxi.net/o_1c1uhrp9i1dmev3g5e7crdioua.png-w.jpg)
 此时继续在终端执行
 ```
 hexo clean
@@ -86,29 +86,29 @@ clone完毕之后如下图
 
 
 ---
-![](http://t1.aixinxi.net/o_1c1ul9kr91ce114i7ku417vcehoa.png-w.jpg)
+![](https://t1.aixinxi.net/o_1c1ul9kr91ce114i7ku417vcehoa.png-w.jpg)
 我们需要在文件夹的目录下显示隐藏文件(因为有坑)；进入themes文件夹下的hexo-theme-next文件夹，将.git隐藏文件删除；如果不删除当hexo项目切换到hexo分支push的时候是不包括hexo-theme-next文件夹下的内容的(它本身也是一个git仓库)。
 
 ---
 - 购买[阿里云域名服务](https://cn.aliyun.com)
 笔者花了15¥/年购买了自己的域名服务，国际域名的话还是实名认证比较好。
-![](http://t1.aixinxi.net/o_1c1umpavt3vv1kfp1u5o549fa.png-w.jpg)
+![](https://t1.aixinxi.net/o_1c1umpavt3vv1kfp1u5o549fa.png-w.jpg)
 域名的配置稍后展示。
 
 ---
 - 注册[Cloudflare](https://www.cloudflare.com)做CDN分发，配置SSL
 可能需要科学上网更快点
-![](http://t1.aixinxi.net/o_1c1umvn7nd49tq0119prvcpnca.png-w.jpg)
+![](https://t1.aixinxi.net/o_1c1umvn7nd49tq0119prvcpnca.png-w.jpg)
 所需配置稍后讲解。
 
 ---
 - 注册免费的图床[7牛](https://www.qiniu.com)
-![](http://t1.aixinxi.net/o_1c1un6df1lu01lkv1kvkpam12npa.png-w.jpg)
+![](https://t1.aixinxi.net/o_1c1un6df1lu01lkv1kvkpam12npa.png-w.jpg)
 Markdown编辑所用。
 
 ---
 - 注册[DaoVoice](https://account.daocloud.io/signin)站内及时消息
-![](http://t1.aixinxi.net/o_1c1unbgru16ek1aetu9g1noe2lba.png-w.jpg)
+![](https://t1.aixinxi.net/o_1c1unbgru16ek1aetu9g1noe2lba.png-w.jpg)
 最好使用github账号登录。
 
 ---
