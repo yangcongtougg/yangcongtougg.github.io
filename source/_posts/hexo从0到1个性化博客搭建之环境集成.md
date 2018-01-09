@@ -1,8 +1,8 @@
 ---
-title: Hexo从0到1个性化博客搭之环境集成
+title: hexo从0到1个性化博客搭之环境集成
 date: 2017-12-22 11:13:46
-tags: Hexo
-categories: Hexo
+tags: hexo博客搭建教程
+categories: hexo
 ---
 
 ### 概述
