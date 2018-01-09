@@ -3,4 +3,3 @@ Thumbs.db
 *.log
 public/
 .deploy*/
-db
