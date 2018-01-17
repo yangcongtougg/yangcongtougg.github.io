@@ -177,9 +177,9 @@ sidebar:
   #  - always  expand for all pages automatically
   #  - hide    expand only when click on the sidebar toggle icon.
   #  - remove  Totally remove sidebar including sidebar toggle.
-  display: post
+  #display: post
   #display: always
-  #display: hide
+  display: hide
   #display: remove
 
   # Sidebar offset from top menubar in pixels (only for Pisces | Gemini).
@@ -672,22 +672,22 @@ fancybox: true
 # Progress bar in the top during page loading.
 pace: true
 # Themes list:
-#pace-theme-big-counter
-#pace-theme-bounce
-#pace-theme-barber-shop
-#pace-theme-center-atom
-#pace-theme-center-circle
-#pace-theme-center-radar
-#pace-theme-center-simple
-#pace-theme-corner-indicator
-#pace-theme-fill-left
-#pace-theme-flash
-#pace-theme-loading-bar
-#pace-theme-mac-osx
-#pace-theme-minimal
+#pace-theme-big-counter 右上角百分数
+#pace-theme-bounce 跳动的小球
+#pace-theme-barber-shop 从左到右冲浪
+#pace-theme-center-atom 中间花型圆圈加载 想要的
+#pace-theme-center-circle 中间翻转的小球加载
+#pace-theme-center-radar 不推荐，中间轮询
+#pace-theme-center-simple 中间的长条形加载条
+#pace-theme-corner-indicator 左上角特别丑的东东
+#pace-theme-fill-left 类似于从左到右冲浪，颜色更浅
+#pace-theme-flash 顶部长条加载，想要的
+#pace-theme-loading-bar 中间的长条形加载条有百分比 想要的
+#pace-theme-mac-osx 顶部长条加载，非常粗
+#pace-theme-minimal 顶部长条加载，想要的
 # For example
 # pace_theme: pace-theme-center-simple
-pace_theme: pace-theme-bounce
+pace_theme: pace-theme-loading-bar
 
 # Canvas-nest
 canvas_nest: false
