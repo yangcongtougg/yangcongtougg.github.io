@@ -1,5 +1,5 @@
 ---
-title: （四）最新python面试题之数网络基础
+title: 最新python面试题之数网络基础
 date: 2018-01-18 15:12:17
 tags: python面试题
 categories: 面试题

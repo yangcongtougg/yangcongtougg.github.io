@@ -1,5 +1,5 @@
 ---
-title: （三）最新python面试题之数据库
+title: 最新python面试题之数据库
 date: 2018-01-16 10:22:31
 tags: python面试题
 categories: 面试题

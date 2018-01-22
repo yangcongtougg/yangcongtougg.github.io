@@ -1,5 +1,5 @@
 ---
-title: （一）最新python面试题之python特性
+title: 最新python面试题之python特性
 date: 2018-01-05 13:15:25
 tags: python面试题
 categories: 面试题

@@ -1,5 +1,5 @@
 ---
-title: （二）最新python面试题之操作系统
+title: 最新python面试题之操作系统
 date: 2018-01-10 15:53:06
 tags: python面试题
 categories: 面试题
