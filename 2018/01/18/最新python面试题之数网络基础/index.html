@@ -1,0 +1,978 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next mist use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+  
+  
+    
+    
+  <script src="/lib/pace/pace.min.js?v=1.0.2"></script>
+  <link href="/lib/pace/pace-theme-loading-bar.min.css?v=1.0.2" rel="stylesheet">
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+  <script>
+  (function(i,s,o,g,r,a,m){i["DaoVoiceObject"]=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;a.charset="utf-8";m.parentNode.insertBefore(a,m)})(window,document,"script",('https:' == document.location.protocol ? 'https:' : 'http:') + "//widget.daovoice.io/widget/0f81ff2f.js","daovoice")
+  daovoice('init', {
+      app_id: "adec0fae"
+    });
+  daovoice('update');
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.3" rel="stylesheet" type="text/css" />
+
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon32.ico?v=5.1.3">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon16.ico?v=5.1.3">
+
+
+
+
+
+
+  <meta name="keywords" content="python面试题," />
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml" title="洋葱头gg's Blog" type="application/atom+xml" />
+
+
+
+
+
+
+<meta name="description" content="网络 网络的基本知识   三次握手 客户端通过向服务器发送一个SYN来创建一个主动打开，作为三次握手的一部分。客户端把这段连接的序号设定为随机数A。 服务器端应当为一个合法的SYN回送一个SYN/ACK。ACK的确认码应该为A+1，SYN/ACK包本身又有一个随机序号B。 最后，客户端再发送一个ACK。当服务端接受到这个ACK的时候，就完成了三路握手，并进入了链接创建状态。此时包序号被设定为收到的">
+<meta name="keywords" content="python面试题">
+<meta property="og:type" content="article">
+<meta property="og:title" content="最新python面试题之数网络基础">
+<meta property="og:url" content="http://yoursite.com/2018/01/18/最新python面试题之数网络基础/index.html">
+<meta property="og:site_name" content="洋葱头gg&#39;s Blog">
+<meta property="og:description" content="网络 网络的基本知识   三次握手 客户端通过向服务器发送一个SYN来创建一个主动打开，作为三次握手的一部分。客户端把这段连接的序号设定为随机数A。 服务器端应当为一个合法的SYN回送一个SYN/ACK。ACK的确认码应该为A+1，SYN/ACK包本身又有一个随机序号B。 最后，客户端再发送一个ACK。当服务端接受到这个ACK的时候，就完成了三路握手，并进入了链接创建状态。此时包序号被设定为收到的">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2018-01-22T10:18:21.784Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="最新python面试题之数网络基础">
+<meta name="twitter:description" content="网络 网络的基本知识   三次握手 客户端通过向服务器发送一个SYN来创建一个主动打开，作为三次握手的一部分。客户端把这段连接的序号设定为随机数A。 服务器端应当为一个合法的SYN回送一个SYN/ACK。ACK的确认码应该为A+1，SYN/ACK包本身又有一个随机序号B。 最后，客户端再发送一个ACK。当服务端接受到这个ACK的时候，就完成了三路握手，并进入了链接创建状态。此时包序号被设定为收到的">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Mist',
+    version: '5.1.3',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2018/01/18/最新python面试题之数网络基础/"/>
+
+
+
+
+
+  <title>最新python面试题之数网络基础 | 洋葱头gg's Blog</title>
+  
+
+
+
+
+
+
+
+
+</head>
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+	<a href="https://github.com/yangcongtougg" class="github-corner" aria-label="View source on Github"><svg width="80" height="80" viewBox="0 0 250 250" style="fill:#151513; color:#fff; position: absolute; top: 0; border: 0; left: 0; transform: scale(-1, 1);" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style></a>
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">洋葱头gg's Blog</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/01/18/最新python面试题之数网络基础/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="洋葱头gg">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/max.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="洋葱头gg's Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">最新python面试题之数网络基础</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-01-18T15:12:17+08:00">
+                2018-01-18
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/面试题/" itemprop="url" rel="index">
+                    <span itemprop="name">面试题</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h2 id="网络"><a href="#网络" class="headerlink" title="网络"></a>网络</h2><blockquote>
+<p>网络的基本知识</p>
+</blockquote>
+<hr>
+<h4 id="三次握手"><a href="#三次握手" class="headerlink" title="三次握手"></a>三次握手</h4><ul>
+<li>客户端通过向服务器发送一个SYN来创建一个主动打开，作为三次握手的一部分。客户端把这段连接的序号设定为随机数A。</li>
+<li>服务器端应当为一个合法的SYN回送一个SYN/ACK。ACK的确认码应该为A+1，SYN/ACK包本身又有一个随机序号B。</li>
+<li>最后，客户端再发送一个ACK。当服务端接受到这个ACK的时候，就完成了三路握手，并进入了链接创建状态。此时包序号被设定为收到的确认号A+1，而响应则为B+1.</li>
+</ul>
+<hr>
+<h4 id="四次挥手"><a href="#四次挥手" class="headerlink" title="四次挥手"></a>四次挥手</h4><blockquote>
+<p>注意：中断连接可以是客户端，也可以是服务端。下面仅以客户端断开连接举例，反之亦然。</p>
+</blockquote>
+<ul>
+<li>客户端发送一个数据分段，其中的FIN标记设置为1。客户端进入PIN-WAIT状态。该状态下的客户端只接收数据，而不再发送数据。</li>
+<li>服务端当收到PIN=1的数据分段的时候，发送带有ACK=1的剩余的数据分段，来确认收到客户端发送过来的FIN信息。</li>
+<li>服务器等到所有的数据传输服务结束之时，向客户端发送一个带有ACK=1的数据分段，并进入CLOSE-WAIT状态，等待客户端发来带有ACK=1的确认报文。</li>
+<li>客户端收到服务器发来带有FIN=1的报文，返回ACK=1的报文确认，为了防止服务端未收到需要重发，进入TTIME-WAIT状态。服务器收到报文之后关闭连接。客户端等待2MSL后未收到答复；则认为服务器成功关闭，客户端关闭连接。</li>
+</ul>
+<p>图解：<a href="http://blog.csdn.net/whuslei/article/details/6667471" target="_blank" rel="noopener">http://blog.csdn.net/whuslei/article/details/6667471</a></p>
+<hr>
+<h4 id="ARP协议"><a href="#ARP协议" class="headerlink" title="ARP协议"></a>ARP协议</h4><p>地址解析协议（Address Resolution Protocol），其基本的功能便是通过目标设备的ip地址，查询目标的MAC地址,以保证通信的顺利进行。她是IPv4网络层必不可少的协议，不过在IPv6中已经不再适用，并被邻居发现协议（NDP）所代替。</p>
+<hr>
+<h4 id="urllib和urllib2的区别"><a href="#urllib和urllib2的区别" class="headerlink" title="urllib和urllib2的区别"></a>urllib和urllib2的区别</h4><ul>
+<li>urllib提供urlencode方法用来GET查询字符串的产生，而urllib2没有。这就是两者通常一块使用的原因。</li>
+<li>urllib2可以接受一个Request类的实例来设置请求的headers，urllib仅可以接受URL。这意味着，你可以不用伪装你的User-Agent等。</li>
+</ul>
+<hr>
+<h4 id="POS和GET"><a href="#POS和GET" class="headerlink" title="POS和GET"></a>POS和GET</h4><p><a href="http://www.cnblogs.com/nankezhishi/archive/2012/06/09/getandpost.html" target="_blank" rel="noopener">GET和POST有什么区别？及为什么网上的多数答案都是错的</a><br><a href="https://www.zhihu.com/question/31640769?rf=37401322" target="_blank" rel="noopener">知乎回答</a><br>get:<a href="https://tools.ietf.org/html/rfc2616#section-9.3" target="_blank" rel="noopener">RFC 2616 - Hypertext Transfer Protocol – HTTP/1.1</a><br>post:<a href="https://tools.ietf.org/html/rfc2616#section-9.5" target="_blank" rel="noopener">RFC 2616 - Hypertext Transfer Protocol – HTTP/1.1</a></p>
+<hr>
+<h4 id="Cookie和Session"><a href="#Cookie和Session" class="headerlink" title="Cookie和Session"></a>Cookie和Session</h4><table>
+<thead>
+<tr>
+<th style="text-align:center"></th>
+<th style="text-align:center">Cookie</th>
+<th style="text-align:center">Session</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">存储位置</td>
+<td style="text-align:center">客户端</td>
+<td style="text-align:center">服务端</td>
+</tr>
+<tr>
+<td style="text-align:center">目的</td>
+<td style="text-align:center">跟踪会话，也可以保存用户的偏好设置或者保存用户的用户名密码等</td>
+<td style="text-align:center">跟踪会话</td>
+</tr>
+<tr>
+<td style="text-align:center">安全性</td>
+<td style="text-align:center">不安全</td>
+<td style="text-align:center">安全</td>
+</tr>
+</tbody>
+</table>
+<p>session的使用是需要cookie的支持的，之所以使用到session，主要是为了安全。</p>
+<hr>
+<h4 id="apache和nginx的区别"><a href="#apache和nginx的区别" class="headerlink" title="apache和nginx的区别"></a>apache和nginx的区别</h4><p>nginx相对apache的优缺点：</p>
+<ul>
+<li>轻量级，同样起web服务，比apache占用更少的内存及连接资源。</li>
+<li>抗并发，nginx处理请求是异步非阻塞的，支持更多的并发连接，而apache则是阻塞型的，在高并发下nginx能保持低资源低消耗及高性能。</li>
+<li>配置简洁。</li>
+<li>高度模块化的设计，编写模块相对简单。</li>
+<li>社区活跃。</li>
+</ul>
+<p>apache相对于nginx的优点：</p>
+<ul>
+<li>rewrite比nginx的rewrite强大。</li>
+<li>模块超多，基本想到的都可以找到。</li>
+<li>少bug，nginx的bug较多。</li>
+<li>超稳定。</li>
+</ul>
+<hr>
+<h4 id="网站用户密码的保存"><a href="#网站用户密码的保存" class="headerlink" title="网站用户密码的保存"></a>网站用户密码的保存</h4><ul>
+<li>明文保存。</li>
+<li>明文hash后保存，如md5。</li>
+<li>md5+salt方式，这个salt可以随机。</li>
+<li>知乎好像使用了Bcrypy加密。</li>
+</ul>
+<hr>
+<h4 id="HTTP和HTTPS"><a href="#HTTP和HTTPS" class="headerlink" title="HTTP和HTTPS"></a>HTTP和HTTPS</h4><table>
+<thead>
+<tr>
+<th style="text-align:center">状态码</th>
+<th style="text-align:center">定义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">1xx报告</td>
+<td style="text-align:center">接收到请求，继续进程</td>
+</tr>
+<tr>
+<td style="text-align:center">2xx报告</td>
+<td style="text-align:center">步骤成功接收，被理解，并被接受</td>
+</tr>
+<tr>
+<td style="text-align:center">3xx重定向</td>
+<td style="text-align:center">为了完成请求必须采取进一步的措施</td>
+</tr>
+<tr>
+<td style="text-align:center">4xx客户端出错</td>
+<td style="text-align:center">请求顺序出错或者不能完成</td>
+</tr>
+<tr>
+<td style="text-align:center">5xx服务端出错</td>
+<td style="text-align:center">服务器无法完显然有效的请求</td>
+</tr>
+<tr>
+<td style="text-align:center">403</td>
+<td style="text-align:center">Forbidden</td>
+</tr>
+<tr>
+<td style="text-align:center">404</td>
+<td style="text-align:center">Not Found</td>
+</tr>
+</tbody>
+</table>
+<p>HTTPS握手，对称加密，非对称加密，TLS/SSH/RSA。</p>
+<hr>
+<h4 id="XSRF和XSS"><a href="#XSRF和XSS" class="headerlink" title="XSRF和XSS"></a>XSRF和XSS</h4><blockquote>
+<p>跟跨网站脚本（XSS）相比，XSS利用的是用户对指定网站的信任，CSRF利用的是网站对用户网页浏览器的信任。</p>
+</blockquote>
+<ul>
+<li>CSRF(Cross-site request forgery)跨站请求伪造。<ul>
+<li>举个例子：因为CSRF攻击利用的是冲着浏览器分不清发起请求是不是真正的用户本人。，也就是说，简单的身份验证只能保证请求发自某个用户的浏览器，却不能保证请求本身是用户自愿发出的。</li>
+<li>用户Alice登录和访问某银行网站A，保留cookie。</li>
+<li>Alice被某些信息诱导访问危险网站B。</li>
+<li>危险网站B上有一个img标签。</li>
+<li>这个标签的src不指向一张图片，而是一个http请求，这个请求向银行要求将Alice的1000元转给Badman，由于Alice的浏览器上有cookie，这样浏览器发出的这个请求就能得到响应执行。</li>
+<li>这样Alice的钱就被偷了。</li>
+</ul>
+</li>
+<li><p>XSRF防护（用户在浏览器中留下信息，浏览器对于接下来的操作是无法确定是不是用户本身的意愿）。所以防范的关键在于在请求中放入黑客所不能伪造的信息。从而防止黑客伪造一个完整的请求欺骗服务器。</p>
+</li>
+<li><p>XSS(Cross Site Scripting)跨站脚本攻击。</p>
+<ul>
+<li>XSS利用的是用户对目标网站的信任，而嵌入了恶意的脚本。</li>
+</ul>
+</li>
+</ul>
+<p>CSRF重点在请求,XSS重点在脚本</p>
+<hr>
+<h4 id="幂等-Idempotence"><a href="#幂等-Idempotence" class="headerlink" title="幂等 Idempotence"></a>幂等 Idempotence</h4><blockquote>
+<p>这里针对HTTP的幂等性。<br>HTTP方法的幂等性是指一次和多次请求某一个资源应该具有同样的副作用。(注意是副作用)</p>
+</blockquote>
+<ul>
+<li>GET： 不会改变资源的状态，不论调用一次还是N次都没有副作用。请注意，这里强调的是一次和N次具有相同的副作用，而不是每次GET的结果相同。GET这个HTTP请求可能会每次得到不同的结果，但它本身并没有产生任何副作用，因而是满足幂等性的。</li>
+<li>DELETE： DELETE方法用于删除资源，有副作用，但它应该满足幂等性。比如：DELETE <code>http://www.forum.com/article/4231</code>调用一次和N次对系统产生的副作用是相同的，即删掉id为4231的帖子；因此，调用者可以多次调用或刷新页面而不必担心引起错误。</li>
+<li>POST： POST所对应的URI并非创建的资源本身，而是资源的接收者。比如：POST <code>http://www.forum.com/articles</code>的语义是在<code>http://www.forum.com/articles</code>下创建一篇帖子，HTTP响应中应包含帖子的创建状态以及帖子的URI。两次相同的POST请求会在服务器端创建两份资源，它们具有不同的URI；所以，POST方法不具备幂等性。</li>
+<li>PUT：PUT所对应的URI是要创建或更新的资源本身。比如：PUT <code>http://www.forum/articles/4231</code>的语义是创建或更新ID为4231的帖子。对同一URI进行多次PUT的副作用和一次PUT是相同的；因此，PUT方法具有幂等性。</li>
+</ul>
+<hr>
+<h4 id="RESTful架构-SOAP-RPC"><a href="#RESTful架构-SOAP-RPC" class="headerlink" title="RESTful架构(SOAP,RPC)"></a>RESTful架构(SOAP,RPC)</h4><p>推荐阅读：<a href="http://www.ruanyifeng.com/blog/2011/09/restful.html" target="_blank" rel="noopener">http://www.ruanyifeng.com/blog/2011/09/restful.html</a></p>
+<hr>
+<h4 id="SOAP"><a href="#SOAP" class="headerlink" title="SOAP"></a>SOAP</h4><blockquote>
+<p>了解即可</p>
+</blockquote>
+<p>SOAP（原为Simple Object Access Protocol的首字母缩写，即简单对象访问协议）是交换数据的一种协议规范，使用在计算机网络Web服务（web service）中，交换带结构信息。SOAP为了简化网页服务器（Web Server）从XML数据库中提取数据时，节省去格式化页面时间，以及不同应用程序之间按照HTTP通信协议，遵从XML格式执行资料互换，使其抽象于语言实现、平台和硬件。</p>
+<hr>
+<h4 id="RPC"><a href="#RPC" class="headerlink" title="RPC"></a>RPC</h4><blockquote>
+<p>了解即可</p>
+</blockquote>
+<p>RPC（Remote Procedure Call Protocol）——远程过程调用协议，它是一种通过网络从远程计算机程序上请求服务，而不需要了解底层网络技术的协议。RPC协议假定某些传输协议的存在，如TCP或UDP，为通信程序之间携带信息数据。在OSI网络通信模型中，RPC跨越了传输层和应用层。RPC使得开发包括网络分布式多程序在内的应用程序更加容易。</p>
+<p>总结:服务提供的两大流派.传统意义以方法调用为导向通称RPC。为了企业SOA,若干厂商联合推出webservice,制定了wsdl接口定义,传输soap.当互联网时代,臃肿SOA被简化为http+xml/json.但是简化出现各种混乱。以资源为导向,任何操作无非是对资源的增删改查，于是统一的REST出现了。</p>
+<p>进化的顺序: RPC -&gt; SOAP -&gt; RESTful</p>
+<hr>
+<h4 id="CGI和WSGI"><a href="#CGI和WSGI" class="headerlink" title="CGI和WSGI"></a>CGI和WSGI</h4><blockquote>
+<p>了解即可</p>
+</blockquote>
+<p>CGI是通用网关接口，是连接web服务器和应用程序的接口，用户通过CGI来获取动态数据或文件等。 CGI程序是一个独立的程序，它可以用几乎所有语言来写，包括perl，c，lua，python等等。</p>
+<p>WSGI, Web Server Gateway Interface，是Python应用程序或框架和Web服务器之间的一种接口，WSGI的其中一个目的就是让用户可以用统一的语言(Python)编写前后端。</p>
+<p>官方说明：<a href="https://www.python.org/dev/peps/pep-3333/" target="_blank" rel="noopener">PEP-3333</a></p>
+<hr>
+<h4 id="中间人攻击"><a href="#中间人攻击" class="headerlink" title="中间人攻击"></a>中间人攻击</h4><blockquote>
+<p>中间人攻击（Man-in-the-middle attack，通常缩写为MITM）是指攻击者与通讯的两端分别创建独立的联系，并交换其所收到的数据，使通讯的两端认为他们正在通过一个私密的连接与对方直接对话，但事实上整个会话都被攻击者完全控制。</p>
+</blockquote>
+<hr>
+<h4 id="c10k问题"><a href="#c10k问题" class="headerlink" title="c10k问题"></a>c10k问题</h4><p>所谓c10k问题，指的是服务器同时支持成千上万个客户端的问题，也就是concurrent 10 000 connection（这也是c10k这个名字的由来）。<br>推荐阅读：<a href="https://my.oschina.net/xianggao/blog/664275" target="_blank" rel="noopener">https://my.oschina.net/xianggao/blog/664275</a></p>
+<hr>
+<h4 id="socket"><a href="#socket" class="headerlink" title="socket"></a>socket</h4><blockquote>
+<p>Socket=Ip address+ TCP/UDP + port</p>
+</blockquote>
+<p>推荐阅读：<a href="http://www.360doc.com/content/11/0609/15/5482098_122692444.shtml" target="_blank" rel="noopener">http://www.360doc.com/content/11/0609/15/5482098_122692444.shtml</a></p>
+<hr>
+<h4 id="浏览器缓存"><a href="#浏览器缓存" class="headerlink" title="浏览器缓存"></a>浏览器缓存</h4><p>推荐阅读： <a href="http://www.cnblogs.com/skynet/archive/2012/11/28/2792503.html" target="_blank" rel="noopener">http://www.cnblogs.com/skynet/archive/2012/11/28/2792503.html</a><br>304 Not Modified</p>
+<hr>
+<h4 id="Ajax"><a href="#Ajax" class="headerlink" title="Ajax"></a>Ajax</h4><blockquote>
+<p>AJAX,Asynchronous JavaScript and XML（异步的 JavaScript 和 XML）, 是与在不重新加载整个页面的情况下，与服务器交换数据并更新部分网页的技术。</p>
+</blockquote>
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/python面试题/" <i class="fa fa-tag"></i> python面试题</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/01/17/人人实验主站SEO现状、分析排查及提升方案/" rel="next" title="人人实验主站SEO现状、分析排查及提升方案">
+                <i class="fa fa-chevron-left"></i> 人人实验主站SEO现状、分析排查及提升方案
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2018/01/22/python高效编程技巧之数据结构相关/" rel="prev" title="python高效编程技巧之数据结构相关">
+                python高效编程技巧之数据结构相关 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image"
+                src="/images/max.jpg"
+                alt="洋葱头gg" />
+            
+              <p class="site-author-name" itemprop="name">洋葱头gg</p>
+              <p class="site-description motion-element" itemprop="description">好看的皮囊千篇一律,有趣的灵魂一二百斤</p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">7</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">4</span>
+                  <span class="site-state-item-name">分类</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">4</span>
+                  <span class="site-state-item-name">标签</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
+          
+            <div class="feed-link motion-element">
+              <a href="/atom.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+            </div>
+          
+
+          <div class="links-of-author motion-element">
+            
+              
+                <span class="links-of-author-item">
+                  <a href="https://github.com/yangcongtougg" target="_blank" title="GitHub">
+                    
+                      <i class="fa fa-fw fa-github"></i>GitHub</a>
+                </span>
+              
+                <span class="links-of-author-item">
+                  <a href="http://www.jianshu.com/users/c2b72fe5b7f6" target="_blank" title="简书">
+                    
+                      <i class="fa fa-fw fa-globe"></i>简书</a>
+                </span>
+              
+                <span class="links-of-author-item">
+                  <a href="maxzhangcong@163.com" target="_blank" title="E-Mail">
+                    
+                      <i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+                </span>
+              
+            
+          </div>
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#网络"><span class="nav-number">1.</span> <span class="nav-text"><a href="#&#x7F51;&#x7EDC;" class="headerlink" title="&#x7F51;&#x7EDC;"></a>&#x7F51;&#x7EDC;</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#三次握手"><span class="nav-number">1.0.1.</span> <span class="nav-text"><a href="#&#x4E09;&#x6B21;&#x63E1;&#x624B;" class="headerlink" title="&#x4E09;&#x6B21;&#x63E1;&#x624B;"></a>&#x4E09;&#x6B21;&#x63E1;&#x624B;</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#四次挥手"><span class="nav-number">1.0.2.</span> <span class="nav-text"><a href="#&#x56DB;&#x6B21;&#x6325;&#x624B;" class="headerlink" title="&#x56DB;&#x6B21;&#x6325;&#x624B;"></a>&#x56DB;&#x6B21;&#x6325;&#x624B;</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#ARP协议"><span class="nav-number">1.0.3.</span> <span class="nav-text"><a href="#ARP&#x534F;&#x8BAE;" class="headerlink" title="ARP&#x534F;&#x8BAE;"></a>ARP&#x534F;&#x8BAE;</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#urllib和urllib2的区别"><span class="nav-number">1.0.4.</span> <span class="nav-text"><a href="#urllib&#x548C;urllib2&#x7684;&#x533A;&#x522B;" class="headerlink" title="urllib&#x548C;urllib2&#x7684;&#x533A;&#x522B;"></a>urllib&#x548C;urllib2&#x7684;&#x533A;&#x522B;</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#POS和GET"><span class="nav-number">1.0.5.</span> <span class="nav-text"><a href="#POS&#x548C;GET" class="headerlink" title="POS&#x548C;GET"></a>POS&#x548C;GET</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Cookie和Session"><span class="nav-number">1.0.6.</span> <span class="nav-text"><a href="#Cookie&#x548C;Session" class="headerlink" title="Cookie&#x548C;Session"></a>Cookie&#x548C;Session</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#apache和nginx的区别"><span class="nav-number">1.0.7.</span> <span class="nav-text"><a href="#apache&#x548C;nginx&#x7684;&#x533A;&#x522B;" class="headerlink" title="apache&#x548C;nginx&#x7684;&#x533A;&#x522B;"></a>apache&#x548C;nginx&#x7684;&#x533A;&#x522B;</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#网站用户密码的保存"><span class="nav-number">1.0.8.</span> <span class="nav-text"><a href="#&#x7F51;&#x7AD9;&#x7528;&#x6237;&#x5BC6;&#x7801;&#x7684;&#x4FDD;&#x5B58;" class="headerlink" title="&#x7F51;&#x7AD9;&#x7528;&#x6237;&#x5BC6;&#x7801;&#x7684;&#x4FDD;&#x5B58;"></a>&#x7F51;&#x7AD9;&#x7528;&#x6237;&#x5BC6;&#x7801;&#x7684;&#x4FDD;&#x5B58;</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#HTTP和HTTPS"><span class="nav-number">1.0.9.</span> <span class="nav-text"><a href="#HTTP&#x548C;HTTPS" class="headerlink" title="HTTP&#x548C;HTTPS"></a>HTTP&#x548C;HTTPS</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#XSRF和XSS"><span class="nav-number">1.0.10.</span> <span class="nav-text"><a href="#XSRF&#x548C;XSS" class="headerlink" title="XSRF&#x548C;XSS"></a>XSRF&#x548C;XSS</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#幂等-Idempotence"><span class="nav-number">1.0.11.</span> <span class="nav-text"><a href="#&#x5E42;&#x7B49;-Idempotence" class="headerlink" title="&#x5E42;&#x7B49; Idempotence"></a>&#x5E42;&#x7B49; Idempotence</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#RESTful架构-SOAP-RPC"><span class="nav-number">1.0.12.</span> <span class="nav-text"><a href="#RESTful&#x67B6;&#x6784;-SOAP-RPC" class="headerlink" title="RESTful&#x67B6;&#x6784;(SOAP,RPC)"></a>RESTful&#x67B6;&#x6784;(SOAP,RPC)</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#SOAP"><span class="nav-number">1.0.13.</span> <span class="nav-text"><a href="#SOAP" class="headerlink" title="SOAP"></a>SOAP</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#RPC"><span class="nav-number">1.0.14.</span> <span class="nav-text"><a href="#RPC" class="headerlink" title="RPC"></a>RPC</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#CGI和WSGI"><span class="nav-number">1.0.15.</span> <span class="nav-text"><a href="#CGI&#x548C;WSGI" class="headerlink" title="CGI&#x548C;WSGI"></a>CGI&#x548C;WSGI</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#中间人攻击"><span class="nav-number">1.0.16.</span> <span class="nav-text"><a href="#&#x4E2D;&#x95F4;&#x4EBA;&#x653B;&#x51FB;" class="headerlink" title="&#x4E2D;&#x95F4;&#x4EBA;&#x653B;&#x51FB;"></a>&#x4E2D;&#x95F4;&#x4EBA;&#x653B;&#x51FB;</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#c10k问题"><span class="nav-number">1.0.17.</span> <span class="nav-text"><a href="#c10k&#x95EE;&#x9898;" class="headerlink" title="c10k&#x95EE;&#x9898;"></a>c10k&#x95EE;&#x9898;</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#socket"><span class="nav-number">1.0.18.</span> <span class="nav-text"><a href="#socket" class="headerlink" title="socket"></a>socket</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#浏览器缓存"><span class="nav-number">1.0.19.</span> <span class="nav-text"><a href="#&#x6D4F;&#x89C8;&#x5668;&#x7F13;&#x5B58;" class="headerlink" title="&#x6D4F;&#x89C8;&#x5668;&#x7F13;&#x5B58;"></a>&#x6D4F;&#x89C8;&#x5668;&#x7F13;&#x5B58;</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Ajax"><span class="nav-number">1.0.20.</span> <span class="nav-text"><a href="#Ajax" class="headerlink" title="Ajax"></a>Ajax</span></a></li></ol></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<span id="busuanzi_container_site_uv">
+  共<span id="busuanzi_value_site_uv"></span>位小伙伴留下脚印
+</span>
+<div class="copyright">&copy; <span itemprop="copyrightYear">2018</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Powered-By洋葱头gg</span>
+
+  
+</div>
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.3"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.3"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.3"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.3"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.3"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';        
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+
+
+  
+  
+
+  
+
+  
+
+  
+
+<script type="text/javascript" color="0,0,255" opacity='0.7' zIndex="-2" count="20" src="//cdn.bootcss.com/canvas-nest.js/1.0.1/canvas-nest.min.js"></script>
+</body>
+</html>
